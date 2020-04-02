@@ -1,0 +1,14 @@
+{
+  "name": "c2n3_c3n3-master",
+  "version": "1.0.0",
+  "description": "## Contexte pédagogique  👋",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
