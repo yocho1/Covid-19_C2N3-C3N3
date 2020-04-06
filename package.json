@@ -1,14 +1,22 @@
 {
-  "name": "c2n3_c3n3-master",
+  "name": "gulptest",
   "version": "1.0.0",
-  "description": "## Contexte pédagogique  👋",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.0.2",
     "node-sass": "^4.13.1"
-  }
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^2.0.0"
+  },
+  "description": ""
 }
