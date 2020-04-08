@@ -64,9 +64,9 @@
 
 // res navbar
 
-@media only screen and (max-width : 437px){
+@media only screen and (max-width : 607px){
     .nav{
-        width: 437px;
+       width: 100%;
 
         
     }
@@ -117,6 +117,7 @@
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: 3rem;
             &--img{
 
                 margin : 1rem 0rem 1rem 1rem;
@@ -130,12 +131,12 @@
                     .heading{
                         color: #1078AD;
                     }
+                    img{
+                        margin-top: 1rem;
+                    }
                     .infos{
                         color: #7F7F7F;
-                    }
-
-                    a{
-                        text-decoration: none;
+                        margin-top: 1rem;
                     }
                     .start{
                         padding: 0.1rem 5rem;
@@ -144,6 +145,7 @@
                         font-size: 27px;
                         font-weight: 700;
                         border-radius: .5rem;
+                        margin-top: 2rem;
                         
                     }
 
@@ -165,7 +167,7 @@
     .hero__infos{
 
         height: 140px;
-        width: 504px;
+        width: 100%;
             h3{
                 font-size: 15px;
             }
@@ -215,16 +217,20 @@
         &--img{ 
             grid-area: img;
             img{
-                width: 800px;
-                height: 650px;
+                width: 150%;
+                height: 600px;
+                position: relative;
+                left: 20%;
+
             }
 
         }
         &--details{ 
-            margin-left: 1rem;
             grid-area: details;
             font-size: 25px;
             font-weight: 700;
+            position: relative;
+            left: 45%;
             .start{
                 margin-left: 1.5rem;
                 
@@ -258,8 +264,8 @@
         }
         &--details{ 
             grid-area: details;
-            font-size: 18px;
-            font-weight: 700;
+            position: relative;
+           left: 20%;
 
         }
 
@@ -269,7 +275,7 @@
     
 }
 
-@media only screen and (max-width : 720){
+@media only screen and (max-width : 720px){
 
     .hero__test{
 
@@ -282,8 +288,8 @@
         &--img{ 
             grid-area: img;
             img{
-                width: 500px;
-                height: 350px;
+                width: 170%;
+                height: 100%px;
             }
 
         }
@@ -291,6 +297,72 @@
             grid-area: details;
             font-size: 18px;
             font-weight: 700;
+            position: relative;
+            left: 55%;
+
+        }
+
+    }
+
+
+    
+}
+@media only screen and (max-width : 600px){
+
+    .hero__test{
+
+        display: grid;
+        grid-gap: 1rem;
+        align-items: center;
+        grid-template-areas: 
+        "img"
+        "details";
+        &--img{ 
+            grid-area: img;
+            img{
+                width: 130%;
+                height: 100%px;
+            }
+
+        }
+        &--details{ 
+            grid-area: details;
+            font-size: 18px;
+            font-weight: 700;
+            position: relative;
+            left: 30%;
+
+        }
+
+    }
+
+
+    
+}
+@media only screen and (max-width : 500px){
+
+    .hero__test{
+
+        display: grid;
+        grid-gap: 1rem;
+        align-items: center;
+        grid-template-areas: 
+        "img"
+        "details";
+        &--img{ 
+            grid-area: img;
+            img{
+                width: 120%;
+                height: 90%px;
+            }
+
+        }
+        &--details{ 
+            grid-area: details;
+            font-size: 18px;
+            font-weight: 700;
+            position: relative;
+            left: 25%;
 
         }
 
@@ -733,6 +805,11 @@
 
     height: 224px;
     background-color: #96C5DC;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
         &__heading{
             
@@ -1071,6 +1148,11 @@
     background-color:#1078AD;
     width: 100%;
     height: 36px;
+}
+@media only screen and (max-width : 531px){
+    .sitebottom{
+        width: 531px;
+    }
 }
 
 

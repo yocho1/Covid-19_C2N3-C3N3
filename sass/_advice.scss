@@ -134,7 +134,7 @@
     }
 }
 
-.infos{
+.infoss{
     width: 100%;
     height: 277px;
     background-color: #D0E5F0;
@@ -176,7 +176,7 @@
 
 }
 @media only screen and (max-width :502px){
-    .infos{
+    .infoss{
         width: 500px;
         height: 277px;
         background-color: #D0E5F0;
@@ -196,6 +196,7 @@
         font-weight: 700;
         color: #1078AD;
         margin-top: 1rem;
+        margin-left: 3rem;
     }
     &__grps{
         margin: auto;
@@ -210,24 +211,46 @@
 
     &__col1{
         &--row1{
-            margin-top: 2rem;
+            align-self: center;
+            img{
+                margin-bottom: 1rem;
+                margin-left: 7rem;
+                }
+            p{
+                text-align: center;
+                font-size: 33px;
+                font-weight: 400;
+                color: #000000;
+            }
            }
-           img{
-            margin-bottom: 1rem;
-            margin-left: 7rem;
-        }
-        p{
-            text-align: center;
-            font-size: 33px;
-            font-weight: 400;
-            color: #000000;
-        }
+
+        &--row2{
+            align-self: center;
+            img{
+                margin-bottom: 1rem;
+                margin-left: 7rem;
+                }
+            p{
+                text-align: center;
+                font-size: 33px;
+                font-weight: 400;
+                color: #000000;
+            }
+           }
+
+
 
 
     }
     &__col2{
+        &--row1{
+            margin-top: 2rem;
+            align-self: center;
+        }
+
         &--row2{
             margin-top: 2rem;
+            align-self: center;
         }
         img{
             margin-bottom: 1rem;
@@ -241,6 +264,38 @@
         }
     }
     
+}
+
+.transmet{
+    &__heading{
+        color: #1078AD;
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 2rem;
+        
+    }
+    &__side{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+    }
+    &__left{
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #1A519E;
+    }
+    &__right{
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #1A519E;
+
+    }
 }
 
 
