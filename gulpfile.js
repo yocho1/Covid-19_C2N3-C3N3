@@ -5,11 +5,20 @@ const cleanCSS = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
 
 
-gulp.task('minify-html', () => {
-    return gulp.src('GULPTEST/*.html')
-      .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest('GULPTEST'));
-  });
+gulp.task('minify-html', function() {
+    return gulp.src('html/*.html')
+    .pipe(htmlmin({
+        collapseWhitespace: true,
+    }))
+    .pipe(gulp.dest('./'));
+});
+gulp.task('minify-html2', function() {
+    return gulp.src('html_sections/*.html')
+    .pipe(htmlmin({
+        collapseWhitespace: true,
+    }))
+    .pipe(gulp.dest('html_sections/'));
+});
 
 
 
@@ -32,4 +41,4 @@ gulp.task('clean', () => {
     ]);
 });
 
-gulp.task('default', gulp.series(['clean', 'styles' ,'minify-css' ,'minify-html']));
+gulp.task('default', gulp.series(['clean', 'styles' ,'minify-css' ,'minify-html' ,'minify-html2']));
