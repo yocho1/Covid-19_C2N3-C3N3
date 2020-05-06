@@ -32,8 +32,14 @@ gulp.task('minify-css', () => {
 gulp.task('styles', () => {
     return gulp.src('sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css/'));
+        .pipe(gulp.dest('css/'));
 });
+
+gulp.task('compress', function() {
+    gulp.src(['./*.js'])
+      .pipe(minify())
+      .pipe(gulp.dest('./'))
+  });
 
 gulp.task('clean', () => {
     return del([
@@ -41,4 +47,4 @@ gulp.task('clean', () => {
     ]);
 });
 
-gulp.task('default', gulp.series(['clean', 'styles' ,'minify-css' ,'minify-html' ,'minify-html2']));
+gulp.task('default', gulp.series(['clean', 'styles' ,'minify-css' ,'minify-html' ,'minify-html2', 'compress']));
